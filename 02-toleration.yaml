@@ -25,8 +25,7 @@ spec:
         project: roboshop
     spec:
       nodeSelector:
-           kubernetes.io/hostname: ip-192-168-22-96.ec2.internal
+        kubernetes.io/hostname: ip-192-168-22-96.ec2.internal
       containers:
       - name: nginx
-        # image: nginx:latest
         image: nginx:trixie:pearl
