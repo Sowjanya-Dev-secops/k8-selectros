@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod1
+spec:          
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: Always
+# kubectl get node --show-labeles;
+# here we get labeles from that we will select this
+# topology.kubernetes.io/zone=us-east-1f
