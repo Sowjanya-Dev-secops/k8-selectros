@@ -27,3 +27,8 @@ spec:
       containers:
       - name: nginx
         image: nginx:trixie:pearl
+      tolerations:
+      - key: "project"
+        operator: "Equal"
+        value: "roboshop"
+        effect: "NoSchedule"
