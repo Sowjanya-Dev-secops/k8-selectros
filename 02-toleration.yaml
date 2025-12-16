@@ -26,7 +26,7 @@ spec:
         kubernetes.io/hostname: ip-192-168-22-96.ec2.internal
       containers:
       - name: nginx
-        image: nginx:trixie:pearl
+        image: nginx:latest
       tolerations:
       - key: "project"
         operator: "Equal"
