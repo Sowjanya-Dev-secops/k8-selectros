@@ -25,9 +25,7 @@ spec:
             operator: In
             values:
             - pod1
-        topologyKey: topology.kubernetes.io/zone
-        matchLabelKeys:
-        - pod-template-hash        
+        topologyKey: topology.kubernetes.io/zone      
   containers:
   - name: nginx
     image: nginx
